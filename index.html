@@ -6,9 +6,89 @@
 	</head>
 	<body>
 		<div>
-			<p>Pong</p>
-			<p>Bouncing Window</p>
-			<p>FPS Game</p>
+			<h1>FPS Game</h1>
+			<p>
+				<a href="https://github.com/colinjbakker/FPSGame2">FPS Game</a> is my most recent project. It aims
+				to imitate fast paced games like <a href="https://store.steampowered.com/app/1229490/ULTRAKILL/">ULTRAKILL</a> or, I 
+				have been told, <a href="https://store.steampowered.com/app/824270/KovaaKs/">Kovaak's</a> 
+			</p>
+			<img src="fps.gif" width="300px">
+			<p>
+				I originally planned to use OpenGL, as a follow up to my Pong game. However, I was advised by
+				Twitter to use raylib instead, so that is what I went with. Raylib is incredibly well documented, so, for the 
+				first time, I was able to generate a graphical window with the help of only the raylib samples and cheatsheet. 
+				I made use of a more object-oriented approach, separating out different parts of the game, such as the player, enemies,
+				and projectiles into structs to be created and destroyed as needed within the game. This helped me keep the code more organized
+				and readable compared to my previous projects. 
+			</p>
+			<p>
+				The biggest challenge for me so far, was understanding the transformations required to make a 3d camera work. I 
+				used a little linear algebra in my bouncing window project, but this was my first application of linear algebra in 
+				3 dimensions. Also, I have no experience in game development, so I am learning how to properly implement movement 
+				and level generation in a way that is actually fun and engaging. 
+			</p>
+			<p>
+				Currently the game has you endlessly shooting black capsules. I want to implement upgrades for the player, different weapons, 
+				and a more robust movement system. I also want to look into importing and rendering meshes for the enemy and player. As 
+				I learn more about computer graphics over the course of my current semester, I want to implement better visuals to this game. 
+			</p>
+			<h1>Bouncing Window</h1>
+			<p>
+				<a href="https://github.com/colinjbakker/BouncingWindow">Bouncing Window</a> is an application
+				window that moves around the screen and rotates according to physics rules. It is also interactive,
+				able to be dragged by the user. This app was inspired by the fidget spinner, aiming to be an application someone 
+				could fling around their screen when they are bored, or when they are thinking. 
+			</p>
+			<img src="bw.gif" width="300px">
+			<p>
+				This project was created in C++ using the wxWidgets library. I recieved a lot of help from
+				<a href="https://youtu.be/FOIbK4bJKS8?feature=shared">this video</a> by <a href="https://www.youtube.com/@javidx9">javidx9</a>
+				for linking the library to my Visual Studio project, and getting a window running. 
+			</p>
+			<p>
+				The key feature that I am most proud of is the simulation of rotation and angular velocity. It was also
+				the greatest challenge. From my research, application windows cannot rotate. Obviously, this is not a feature
+				that is required by many applications. However, I was not satisfied with the original version, without rotation.
+			</p>
+			<img src="bouncingwindowgif.gif" width="300px">
+			<p>
+				My solution was to create bitmaps. wxWidgets had support for changing the shape of a window using bitmaps, typically
+				used when an application wants a custom shaped splach screen on startup. I algorithmically created bitmaps 
+				for each angle between zero and ninety degrees, which would be switched between to represent the calculated angle of
+				the window. Unfortunately, this method meant that the title bar had to be removed, including the x button. 
+				I would have liked the title bar to rotate with the application window, but at the moment, I am still investigating how 
+				this can be done. As a compromise, I stuck an x button in the center so that the application can at least be closed in 
+				the meantime.  
+			</p>
+			<p>
+				This was the first project that I created that could be run on other people's computers without issue, the only
+				issue being that the user is given a warning by windows defender when they try and run it. In the future I plan to 
+				recreate this application with better coding style, the current implementation is a complete mess. I would also like to refine
+				the physics simulation. I do not have much physics education, so my implementation came out looking a little janky, especially 
+				with rotation. I would also like to reimplement the title bar, if it is possible.
+			</p>
+			<h1>Pong</h1>
+			<p>
+				<a href="https://github.com/colinjbakker/Pong">Pong</a> is a very simple game
+				I created to gain a better understanding of computer graphics and GUI, and the 
+				use of libraries. With the help of 
+				<a href="https://learnopengl.com/">learnopengl.com</a> written by 
+				<a href="https://joeydevries.com/#home">Joey de Vries</a>, I used OpenGL, GLFW, and 
+				GLAD libraries. I will not lie, I was a little out of my depth. I decided to keep
+				the game simple, graphically. I spent most of my time making the AI as good as possible.
+				It follows the ball when it is moving towards the player, and as soon as the player's paddle
+				hits the ball, it calculates the path and moves to intercept it at the point on the paddle that
+				causes the ball to move at a difficult-to-predict angle. I learned how I can link C++
+				libraries and build to executables using Visual Studio.
+			</p>
+			<img src="pong.gif" width="300px">
+			<p>
+				Unfortunately, for some reason
+				I am not sure of, when the executable is downloaded and run from GitHub, the player paddle
+				is invisible. I am still not totally comfortable with OpenGL, but I am currently enrolled in 
+				computer graphics, where we will be building all of out projects with OpenGL. Hopefully, over the 
+				course of this semester I am able to fully grasp OpenGL and am able to make better OpenGL projects.
+			</p>
 		</div>
 	</body>
 </html>
