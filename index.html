@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Home</title>
+		<title>Projects</title>
 		<link rel="stylesheet" href="styles.css">
 	</head>
 	<body>
-		<div>
+		<div class="sidenav">
+			<a href="aboutme.html">About Me</a>
+			<a href="index.html">Projects</a>
+			<a href="doodles.html">Doodles</a>
+		</div>
+
+		<div class="content">
 			<h1>FPS Game</h1>
 			<p>
 				<a href="https://github.com/colinjbakker/FPSGame2">FPS Game</a> is my most recent project. It aims
 				to imitate fast paced games like <a href="https://store.steampowered.com/app/1229490/ULTRAKILL/">ULTRAKILL</a> or, I 
 				have been told, <a href="https://store.steampowered.com/app/824270/KovaaKs/">Kovaak's</a> 
 			</p>
-			<img src="fps.gif" width="300px">
+			<img class="gif" src="resources/gifs/fps.gif" width="300px">
 			<p>
 				I originally planned to use OpenGL, as a follow up to my Pong game. However, I was advised by
 				Twitter to use raylib instead, so that is what I went with. Raylib is incredibly well documented, so, for the 
@@ -39,7 +45,7 @@
 				able to be dragged by the user. This app was inspired by the fidget spinner, aiming to be an application someone 
 				could fling around their screen when they are bored, or when they are thinking. 
 			</p>
-			<img src="bw.gif" width="300px">
+			<img class="gif" src="resources/gifs/bw.gif" width="300px">
 			<p>
 				This project was created in C++ using the wxWidgets library. I recieved a lot of help from
 				<a href="https://youtu.be/FOIbK4bJKS8?feature=shared">this video</a> by <a href="https://www.youtube.com/@javidx9">javidx9</a>
@@ -50,7 +56,7 @@
 				the greatest challenge. From my research, application windows cannot rotate. Obviously, this is not a feature
 				that is required by many applications. However, I was not satisfied with the original version, without rotation.
 			</p>
-			<img src="bouncingwindowgif.gif" width="300px">
+			<img class="gif" src="resources/gifs/bouncingwindowgif.gif" width="300px">
 			<p>
 				My solution was to create bitmaps. wxWidgets had support for changing the shape of a window using bitmaps, typically
 				used when an application wants a custom shaped splach screen on startup. I algorithmically created bitmaps 
@@ -81,13 +87,42 @@
 				causes the ball to move at a difficult-to-predict angle. I learned how I can link C++
 				libraries and build to executables using Visual Studio.
 			</p>
-			<img src="pong.gif" width="300px">
+			<img class="gif" src="resources/gifs/pong.gif" width="300px">
 			<p>
 				Unfortunately, for some reason
 				I am not sure of, when the executable is downloaded and run from GitHub, the player paddle
 				is invisible. I am still not totally comfortable with OpenGL, but I am currently enrolled in 
 				computer graphics, where we will be building all of out projects with OpenGL. Hopefully, over the 
 				course of this semester I am able to fully grasp OpenGL and am able to make better OpenGL projects.
+			</p>
+			<h1>Wordle Clone</h1>
+			<p>
+				Wordle clone is a project that I, unfortunately, cannot share the source code for because 
+				it was my final project for my programming languages course. I will include this gif however.
+			</p>
+			<img class="gif" src="resources/gifs/wordle.gif" width="300px">
+			<p>
+				This project made use of the Java programming language and the JavaFX library. This was the first
+				time that I had ever created a graphical project (excluding html), and this was the project that
+				sparked my interest in creating GUI programs and games. Although my professor implored us to use 
+				<a href="https://gluonhq.com/products/scene-builder/">SceneBuilder</a>, I decided to program all of 
+				the GUI elements manually at the advice of <a href="https://www.pragmaticcoding.ca/beginners/intro">this article</a>
+				by Dave Barrett. His guide was also taught me the model-view-controller design pattern, which I implemented
+				in this project. I gained a ton of knowledge about how to use libraries, how events are handled by GUI applications,
+				and how GUI programs should be organized in large part thanks to this decision to not use SceneBuilder.
+			</p>
+			<h1>Mouse Distance Tracker</h1>
+			<p>
+				<a href="https://github.com/colinjbakker/mouse-distance-tracker">Mouse Distance Tracker</a> was a fun
+				quick project I created in about an hour during some down time in my internship. It's purpose was to track 
+				how far, in meters, my mouse moved over the course of the remainder of my internship.
+			</p>
+			<img class="gif" src="resources/gifs/mdt.gif" width="300px">
+			<p>
+				I created this little widget using Python and the <a href="https://docs.python.org/3/library/tkinter.html">tkinter</a>,
+				<a href="https://pypi.org/project/PyAutoGUI/">pyautogui</a> and <a href="https://pypi.org/project/screeninfo/">screeninfo</a> 
+				modules. This was very simple, and honestly I didn't learn much, but it was fun and also surprising how many 
+				kilometers I traveled. If I remembered the distance I would write it here.
 			</p>
 		</div>
 	</body>

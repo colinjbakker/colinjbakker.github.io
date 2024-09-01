@@ -5,10 +5,13 @@ html{
 body {
     display: grid;
 }
-div{
+.content {
     width: 50%;
     min-width: 300px;
     margin: auto;
+}
+.sidebar {
+    position: fixed;
 }
 
 img {
@@ -19,17 +22,17 @@ img {
 }
 
 h1{
-    color: rgb(232, 232, 232)
+    color: rgb(232, 232, 232);
+    font-size: 4em;
 }
 
 p {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color: rgb(238, 152, 72);
-    font-size: 1em;
+    font-size: 2em;
 }
 
 a {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color: rgb(238, 102, 72);
-    font-size: 1em;
 }
