@@ -12,119 +12,85 @@
 		</div>
 
 		<div class="content">
-			<h1>FPS Game</h1>
-			<p>
-				<a href="https://github.com/colinjbakker/FPSGame2">FPS Game</a> is my most recent project. It aims
-				to be a fast paced shooter similar to <a href="https://store.steampowered.com/app/1229490/ULTRAKILL/">ULTRAKILL</a> or, I 
-				have been told, <a href="https://store.steampowered.com/app/824270/KovaaKs/">Kovaak's</a> 
-			</p>
-			<img class="gif" src="resources/gifs/fps.gif" width="300px">
-			<p>
-				I originally planned to use OpenGL as a follow up to my Pong game. However, after some research, I decided to use 
-				<a href="https://www.raylib.com/">raylib</a> instead. Raylib is incredibly well documented and has lots of example code,
-				so for the first time I was able to sart this project without the help of a video guide. 
-				I made use of a more object-oriented approach, separating out different parts of the game, such as the player, enemies,
-				and projectiles into structs to be created and destroyed as needed within the game. This helped me keep the code more organized
-				and readable compared to my previous projects. 
-			</p>
-			<p>
-				The biggest challenge for me so far was understanding the transformations required to make a 3d camera. I 
-				used a little linear algebra in my bouncing window project, but this was my first application of linear algebra in 
-				three dimensions. I took linear algebra last year, but hadn't applied it or fully understood it until now. I also do 
-				not have experience with game development, it is challenging to make the game engaging and fun, and the amount of features
-				needed to make a complete game is daunting. 
-			</p>
-			<p>
-				Currently the game has you endlessly shooting black capsules. I want to implement upgrades for the player, different weapons, 
-				a more robust movement system, and different levels, potentially bosses. I also want to look into importing and rendering meshes 
-				for the enemy and player and improving the graphics with lighting as I learn more about computer graphics in my course this semester.
-			</p>
-			<h1>Bouncing Window</h1>
-			<p>
-				<a href="https://github.com/colinjbakker/BouncingWindow">Bouncing Window</a> is an application
-				window that moves around the screen and rotates according to physics rules. It is also interactive,
-				able to be dragged by the user. It aimsw to be an application someone 
-				can fling around their screen when they are bored or when they are thinking like a digital fidget spinner. 
-			</p>
-			<img class="gif" src="resources/gifs/bw.gif" width="300px">
-			<p>
-				This project was created in C++ using the wxWidgets library. I recieved a lot of help from
-				<a href="https://youtu.be/FOIbK4bJKS8?feature=shared">this video</a> by <a href="https://www.youtube.com/@javidx9">javidx9</a>
-				for linking the library to my Visual Studio project and getting a window running. 
-			</p>
-			<p>
-				The key feature that I am most proud of is the simulation of rotation and angular velocity. It was also
-				the greatest challenge. From my research, application windows cannot rotate. Obviously, this is not a feature
-				that is required by many applications. However, I was not satisfied with the original version, without rotation.
-			</p>
-			<img class="gif" src="resources/gifs/bouncingwindowgif.gif" width="300px">
-			<p>
-				My solution was to create bitmaps. wxWidgets had support for changing the shape of a window using bitmaps, typically
-				used when an application wants a custom shaped splach screen on startup. I algorithmically created bitmaps 
-				for each angle between zero and ninety degrees, which would be switched between to represent the calculated angle of
-				the window. Unfortunately, this method meant that the title bar had to be removed, including the x button. 
-				I would have liked the title bar to rotate with the application window, but at the moment, I am still investigating how 
-				this can be done. As a compromise, I stuck an x button in the center so that the application can at least be closed in 
-				the meantime.  
-			</p>
-			<p>
-				This was the first project that I created that could be run on other people's computers without issue, the only
-				issue being that the user is given a warning by windows defender when they try and run it. In the future I plan to 
-				recreate this application with better coding style, the current implementation is a complete mess. I would also like to refine
-				the physics simulation. I do not have much physics education, so my implementation came out looking a little janky, especially 
-				with rotation. I would also like to reimplement the title bar, if it is possible.
-			</p>
-			<h1>Pong</h1>
-			<p>
-				<a href="https://github.com/colinjbakker/Pong">Pong</a> is a very simple game
-				I created to gain a better understanding of computer graphics and GUI, and the 
-				use of libraries. With the help of 
-				<a href="https://learnopengl.com/">learnopengl.com</a> written by 
-				<a href="https://joeydevries.com/#home">Joey de Vries</a>, I used OpenGL, GLFW, and 
-				GLAD libraries. I will not lie, I was a little out of my depth. I decided to keep
-				the game simple, graphically. I spent most of my time making the AI as good as possible.
-				It follows the ball when it is moving towards the player, and as soon as the player's paddle
-				hits the ball, it calculates the path and moves to intercept it at the point on the paddle that
-				causes the ball to move at a difficult-to-predict angle. I learned how I can link C++
-				libraries and build to executables using Visual Studio.
-			</p>
-			<img class="gif" src="resources/gifs/pong.gif" width="300px">
-			<p>
-				Unfortunately, for some reason
-				I am not sure of, when the executable is downloaded and run from GitHub, the player paddle
-				is invisible. I am still not totally comfortable with OpenGL, but I am currently enrolled in 
-				computer graphics, where we will be building all of out projects with OpenGL. Hopefully, over the 
-				course of this semester I am able to fully grasp OpenGL and am able to make better OpenGL projects.
-			</p>
-			<h1>Wordle Clone</h1>
-			<p>
-				Wordle clone is a project that I, unfortunately, cannot share the source code for because 
-				it was my final project for my programming languages course. I will include this gif however.
-			</p>
-			<img class="gif" src="resources/gifs/wordle.gif" width="300px">
-			<p>
-				This project made use of the Java programming language and the JavaFX library. This was the first
-				time that I had ever created a graphical project (excluding html), and this was the project that
-				sparked my interest in creating GUI programs and games. Although my professor implored us to use 
-				<a href="https://gluonhq.com/products/scene-builder/">SceneBuilder</a>, I decided to program all of 
-				the GUI elements manually at the advice of <a href="https://www.pragmaticcoding.ca/beginners/intro">this article</a>
-				by Dave Barrett. His guide was also taught me the model-view-controller design pattern, which I implemented
-				in this project. I gained a ton of knowledge about how to use libraries, how events are handled by GUI applications,
-				and how GUI programs should be organized in large part thanks to this decision to not use SceneBuilder.
-			</p>
-			<h1>Mouse Distance Tracker</h1>
-			<p>
-				<a href="https://github.com/colinjbakker/mouse-distance-tracker">Mouse Distance Tracker</a> was a fun
-				quick project I created in about an hour during some down time in my internship. It's purpose was to track 
-				how far, in meters, my mouse moved over the course of the remainder of my internship.
-			</p>
-			<img class="gif" src="resources/gifs/mdt.gif" width="300px">
-			<p>
-				I created this little widget using Python and the <a href="https://docs.python.org/3/library/tkinter.html">tkinter</a>,
-				<a href="https://pypi.org/project/PyAutoGUI/">pyautogui</a> and <a href="https://pypi.org/project/screeninfo/">screeninfo</a> 
-				modules. This was very simple, and honestly I didn't learn much, but it was fun and also surprising how many 
-				kilometers I traveled. If I remembered the distance I would write it here.
-			</p>
+			<div class="text">
+				<h1>
+					FPS
+				</h1>
+				<p>
+					<a href="https://github.com/colinjbakker/FPSGame2">FPS Game</a> is my entry into 3D graphics.
+					Programmed in C++ with the help of <a href="https://www.raylib.com/">raylib</a>.
+					Biggest challenge was refreshing my linear algebra knowledge for working in 3D, especially with the camera.
+					Want to add mode game-like features like upgrades and weapons if there is a lull in my schoolwork or over the winter.
+					Also want to make the graphics look better, currently enrolled in computer graphics, so hopefully I learn helpful information for this project.  
+				</p>
+			</div>
+			<div class="image">
+				<img class="gif" src="resources/gifs/fps.gif" width="300px">
+			</div>
+
+			<div class="image">
+				<img class="gif" src="resources/gifs/bw.gif" width="300px">
+			</div>
+			<div class="text">
+				<h1>
+					Bouncing Window
+				</h1>
+				<p>
+					<a href="https://github.com/colinjbakker/BouncingWindow">Bouncing Window</a> is a window that allows the user to throw a red square around their screen.
+					Programmed in C++ using the <a href="https://www.wxwidgets.org/">wxWidgets</a> library.
+					The biggest challenge was getting the window to rotate. I solved this by creating bitmaps representing different angles, which could be used to change the window's shape, and swapped between them depending on the window's angle.
+					In the future I want to clean up the code, and possibly remake the project entirely.
+					I also want to improve the rotational physics.
+				</p>
+			</div>
+
+			<div class="text">
+				<h1>
+					Pong
+				</h1>
+				<p>
+					<a href="https://github.com/colinjbakker/Pong">Pong</a> was my first introduction to OpenGL.
+					I made this after learning OpenGl on <a href="https://learnopengl.com/">learnopengl.com</a> written by <a href="https://joeydevries.com/#home">Joey de Vries</a>.
+					The biggest challenge was getting OpenGL, GLFW, and GLAD running and linked to my project.
+					Ultimately, this project was more about getting more comfortable working with libraries in C++ than the actual game itself.
+					I am still proud of my AI enemy paddle who predicts the movement of the ball and positions itself to create an extremely difficult return. 
+					I haven't been able to score even a single point against it.
+				</p>
+			</div>
+			<div class="image">
+				<img class="gif" src="resources/gifs/pong.gif" width="300px">
+			</div>
+
+			<div class="image">
+				<img class="gif" src="resources/gifs/wordle.gif" width="300px">
+			</div>
+			<div class="text">
+				<h1>
+					Wordle Clone
+				</h1>
+				<p>
+					Wordle Clone is a clone of the game Wordle created using JavaFx for a school project.
+					Although the professor asked us to create it using <a href="https://gluonhq.com/products/scene-builder/">SceneBuilder</a>, I decided to program all of 
+					the GUI elements manually at the advice of <a href="https://www.pragmaticcoding.ca/beginners/intro">this article</a> by Dave Barrett.
+					This was difficult, but it gave me a far greater understanding of how GUI elements are created and interact, and sparked my interest in creating more graphical applicaitions.
+				</p>
+			</div>
+			
+			<div class="text">
+				<h1>
+					Mouse Distance Tracker
+				</h1>
+				<p>
+					<a href="https://github.com/colinjbakker/mouse-distance-tracker">Mouse Distance Tracker</a> was a fun,
+					quick project I created to track how far, in meters, my mouse moves on my screen.
+					Created using Python and the <a href="https://docs.python.org/3/library/tkinter.html">tkinter</a>,
+					<a href="https://pypi.org/project/PyAutoGUI/">pyautogui</a> and <a href="https://pypi.org/project/screeninfo/">screeninfo</a> packages.
+				</p>
+			</div>
+
+			<div class="image">
+				<img class="gif" src="resources/gifs/mdt.gif" width="300px">
+			</div>
 		</div>
 	</body>
 </html>

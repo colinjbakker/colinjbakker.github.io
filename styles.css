@@ -4,11 +4,15 @@ html{
 
 body {
     display: grid;
+    font-size: 1em;
 }
 .content {
-    width: 50%;
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 60%;
     min-width: 300px;
     margin: auto;
+    gap: 15px;
 }
 .sidenav {
     position: fixed;
@@ -21,11 +25,19 @@ body {
     text-align: center;
 }
 
+.text {
+    text-align: justify;
+}
+
+.image {
+    display: flex;
+    height: 100%;
+}
+
 .gif {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 75%;
+    width: 100%;
+    vertical-align: middle;
+    margin: auto;
 }
 
 .doodles {
@@ -41,13 +53,11 @@ body {
 
 h1{
     color: rgb(232, 232, 232);
-    font-size: 4em;
 }
 
 p {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color: rgb(238, 152, 72);
-    font-size: 2em;
 }
 
 a {
