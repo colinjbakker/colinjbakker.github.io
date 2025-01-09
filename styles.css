@@ -1,5 +1,11 @@
+@font-face {
+    font-family: supersecretfont;
+    src: url(resources/NIS-JTC-Win-M9.ttf);
+}
+
 body {
-    background-color: rgb(53, 116, 170);
+    font-family: supersecretfont;
+    background-color: rgb(18, 53, 36);
     color: white;
     padding-top: 6rem;
 }
@@ -14,42 +20,48 @@ body {
 }
 
 .button {
-    background-color:rgb(185, 222, 255);
+    font-family: supersecretfont;
+    background-color:rgb(0,143,80);
     padding: 1rem;
     width: 50%;
     height: 6rem;
     text-align: center;
     border: none;
-    border-bottom: rgb(95, 142, 184) solid 10px;
+    border-bottom: rgb(14,76,47) solid 10px;
     font-size: xx-large;
     color: black;
     font-weight: bolder;
 }
 
 .button:hover{
-    background-color: rgb(142, 202, 255); 
-    border-top: rgb(142, 202, 255) solid 3px;
-    border-bottom: rgb(95, 142, 184) solid 7px;
+    background-color: rgb(5,121,69); 
+    border-top: rgb(5,121,69) solid 3px;
+    border-bottom: rgb(14,76,47) solid 7px;
     color: black;
 }
 
 .button:active{
-    background-color: rgb(86, 155, 216); 
-    border-top: rgb(86, 155, 216) solid 7px;
-    border-bottom: rgb(95, 142, 184) solid 3px;
+    background-color: rgb(9,98,58); 
+    border-top: rgb(9,98,58) solid 7px;
+    border-bottom: rgb(14,76,47) solid 3px;
     color: white;
 }
 
 .button.clicked{
-    background-color: rgb(53, 116, 170); 
-    border-top: rgb(53, 116, 170) solid 10px;
-    border-bottom: rgb(95, 142, 184) solid 0px;
+    background-color: rgb(18, 53, 36); 
+    border-top: rgb(18, 53, 36) solid 10px;
+    border-bottom: rgb(14,76,47) solid 0px;
     color: white;
+}
+
+.content{
+    text-align: justify;
+    text-align-last: center;
 }
 
 a{
     color: white;
 }
 img{
-    width: 50%;
+    width: 60%;
 }
