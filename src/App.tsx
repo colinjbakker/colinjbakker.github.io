@@ -1,34 +1,54 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import ProjectCard from "./components/ui/projectCard"
+
+const projects = [
+  {
+    title: "WoofWatch",
+    description: "Real-time GPS tracking system for pets with mobile app integration",
+    imageUrl: "resources/woofwatch.PNG",
+    onClickUrl: "/"
+  },
+  {
+    title: "Bouncing Window",
+    description: "Fidget toy",
+    imageUrl: "resources/gifs/bw.gif",
+    onClickUrl: "https://github.com/colinjbakker/BouncingWindow"
+  },
+  {
+    title: "Raytracer",
+    description: "Raytracer",
+    imageUrl: "resources/raytracer.png",
+    onClickUrl: "/"
+  },
+  {
+    title: "FPS",
+    description: "First-person shooter game",
+    imageUrl: "resources/gifs/fps.gif",
+    onClickUrl: "https://github.com/colinjbakker/FPSGame2"
+  },
+  {
+    title: "Pong",
+    description: "Pong",
+    imageUrl: "resources/gifs/pong.gif",
+    onClickUrl: "https://github.com/colinjbakker/Pong"
+  },
+  {
+    title: "Wordle",
+    description: "Wordle clone",
+    imageUrl: "resources/gifs/wordle.gif",
+    onClickUrl: "/"
+  }
+]
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="w-screen justify-items-center">
+      <div className="w-3/4 columns-md justify-items-center">
+        {projects.map((item, index) => (
+          <ProjectCard key={index} title={item.title} description={item.description} imageUrl={item.imageUrl} onClickUrl={item.onClickUrl}/>
+        ))}
+        
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    </div>
   )
 }
 
