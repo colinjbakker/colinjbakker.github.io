@@ -2,6 +2,12 @@ import ProjectCard from "./components/ui/projectCard"
 
 const projects = [
   {
+    title: "ColinChan",
+    description: "Location based social media, serves posts created within 15000m radius of user colinchan.vercel.app",
+    imageUrl: "resources/colinchan.png",
+    onClickUrl: "colinchan.vercel.app"
+  },
+  {
     title: "WoofWatch",
     description: "Real-time GPS tracking system for pets with mobile app integration",
     imageUrl: "resources/woofwatch.PNG",
