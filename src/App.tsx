@@ -5,7 +5,7 @@ const projects = [
     title: "ColinChan",
     description: "Location based social media, serves posts created within 15000m radius of user colinchan.vercel.app",
     imageUrl: "resources/colinchan.png",
-    onClickUrl: "colinchan.vercel.app"
+    onClickUrl: "https://colinchan.vercel.app/"
   },
   {
     title: "WoofWatch",
